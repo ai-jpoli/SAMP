@@ -1,0 +1,1338 @@
+[2022-06-30 15:54]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-06-30 16:00]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-06-30 16:15]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 1344 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-06-30 16:56]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3000 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-06-30 17:17]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 1618 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-06-30 19:02]
+Error ID: 1054
+Callback: 
+Query: UPDATE houses SET house_desc = 'HAN FAMILY' WHERE id = 215
+[!] Unknown column 'house_desc' in 'field list'
+
+[2022-06-30 19:04]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3066 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-06-30 20:04]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 997 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-06-30 20:10]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2023 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 02:49]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 886 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 02:49]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 886 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 03:31]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 335 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 04:23]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 111 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 05:54]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3025 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 06:32]
+Error ID: 1264
+Callback: 
+Query: UPDATE vehicles SET paintjob = 255 WHERE id = 3003
+[!] Out of range value for column 'paintjob' at row 1
+
+[2022-07-01 06:32]
+Error ID: 1264
+Callback: 
+Query: UPDATE vehicles SET paintjob = 255 WHERE id = 3003
+[!] Out of range value for column 'paintjob' at row 1
+
+[2022-07-01 06:32]
+Error ID: 1264
+Callback: 
+Query: UPDATE vehicles SET paintjob = 255 WHERE id = 3003
+[!] Out of range value for column 'paintjob' at row 1
+
+[2022-07-01 06:34]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3000 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 07:47]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2139 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 10:00]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2951 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 10:37]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3096 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 12:39]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3138 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 12:41]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3139 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 13:05]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3135 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 14:03]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-01 14:04]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-01 14:05]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-01 14:09]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-01 14:16]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3066 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 14:16]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3066 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 14:16]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3066 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 14:18]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3066 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 14:19]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3066 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 14:19]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3066 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 14:19]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3066 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 14:19]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3066 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 14:20]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3066 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 14:21]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3066 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 15:27]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 1436 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 15:34]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3025 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 16:07]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-01 16:10]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-01 17:34]
+Error ID: 1064
+Callback: 
+Query: UPDATE gangs SET pot = 20, WHERE id = 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE id = 1' at line 1
+
+[2022-07-01 17:57]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2919 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 18:07]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3000 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 18:08]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 1879 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 20:18]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3184 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-01 23:20]
+Error ID: 1054
+Callback: 
+Query: UPDATE houses SET house_desc = 'BCFL' WHERE id = 349
+[!] Unknown column 'house_desc' in 'field list'
+
+[2022-07-02 01:19]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 787 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-02 02:04]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 1637 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-02 04:25]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2904 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-02 06:49]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3215 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-02 07:02]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2449 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-02 08:27]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 799 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-02 08:37]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2678 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-02 08:37]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2678 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-02 08:42]
+Error ID: 1054
+Callback: 
+Query: UPDATE houses SET house_desc = 'yassykuro' WHERE id = 420
+[!] Unknown column 'house_desc' in 'field list'
+
+[2022-07-02 08:44]
+Error ID: 1054
+Callback: 
+Query: UPDATE houses SET house_desc = 'YassyKuro' WHERE id = 420
+[!] Unknown column 'house_desc' in 'field list'
+
+[2022-07-02 09:01]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 1072 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-02 09:28]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-02 11:28]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3140 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-02 11:39]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 111 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-02 13:30]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2940 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-02 13:41]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3025 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-02 14:21]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 787 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-02 14:23]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2904 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-02 14:32]
+Error ID: 1054
+Callback: 
+Query: UPDATE houses SET house_desc = 'TATAMORAN HOUSE' WHERE id = 402
+[!] Unknown column 'house_desc' in 'field list'
+
+[2022-07-02 14:34]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2959 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-02 14:39]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-02 14:40]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-02 15:28]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2940 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-02 16:28]
+Error ID: 1064
+Callback: OnPlayerDMVRelease
+Query: SELECT id, tickets, modelid FROM vehicles WHERE ownerid = 3199 AND impounded = 1 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-02 17:39]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2959 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-02 17:54]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2850 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-02 19:36]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3158 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-03 00:48]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 1626 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-03 01:56]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 1559 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-03 02:09]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3241 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-03 03:32]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3174 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-03 03:59]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 1192 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-03 04:31]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2728 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-03 04:32]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2728 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-03 04:33]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2728 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-03 05:25]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2831 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-03 05:49]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3305 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-03 06:20]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3240 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-03 07:48]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-03 07:49]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-03 07:53]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-03 07:54]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-03 08:27]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2687 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-03 09:18]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 1908 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-03 10:10]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 751 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-03 10:20]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-03 10:22]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-03 10:23]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-03 10:24]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-03 10:25]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-03 10:27]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-03 10:38]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-03 11:26]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 1908 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-03 14:35]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 1660 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-03 14:41]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 1277 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-03 14:44]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3339 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-03 16:44]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 38, bank = 1164182, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 799
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 19, bank = 806660, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 1727
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 9, bank = 11370035, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 3185
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 15, bank = 1938159, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 1277
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 23, bank = 26065212, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 2904
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 9, bank = 803913, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 3066
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 44, bank = 2481417, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 2480
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 4, bank = 23922, paycheck = 0, weaponrestricted = 1, cooldown = 0, doublexp = 0 WHERE uid = 3143
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 51, bank = 16566121, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 1878
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 41, bank = 239942, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 787
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 7, bank = 626832, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 2807
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 1, bank = 21954, paycheck = 0, weaponrestricted = 3, cooldown = 0, doublexp = 0 WHERE uid = 2731
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 27, bank = 6871453, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 1128
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 15, bank = 190389, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 2473
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 1, bank = 506, paycheck = 0, weaponrestricted = 3, cooldown = 0, doublexp = 0 WHERE uid = 2746
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 55, bank = 1897797, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 230
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 19, bank = 1013266, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 379
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 123, bank = 2983433, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 1637
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 23, bank = 2808445, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 2354
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 84, bank = 2688957, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 997
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 3, bank = 782185, paycheck = 0, weaponrestricted = 1, cooldown = 0, doublexp = 0 WHERE uid = 3331
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 5, bank = 714960, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 2959
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 10, bank = 1943125, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 1879
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 160, bank = 135159, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 197
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 80, bank = 3123028, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 2191
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 3, bank = 8029328, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 2940
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 24, bank = 964249, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 2848
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 32, bank = 907231, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 2704
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 10, bank = 20610015, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 2476
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 34, bank = 4602695, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 2757
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 37, bank = 37, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 2802
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:01]
+Error ID: 1054
+Callback: 
+Query: UPDATE users SET minutes = 0, hours = hours + 1, exp = 7, bank = 663098, paycheck = 0, weaponrestricted = 0, cooldown = 0, doublexp = 0 WHERE uid = 1436
+[!] Unknown column 'cooldown' in 'field list'
+
+[2022-07-03 17:13]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-03 18:13]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3331 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-03 19:26]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3066 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-03 21:00]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2577 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-03 23:14]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3355 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 02:13]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3317 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 03:01]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-04 03:11]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-04 03:45]
+Error ID: 1054
+Callback: 
+Query: UPDATE houses SET house_desc = 'Kraigers house;)' WHERE id = 329
+[!] Unknown column 'house_desc' in 'field list'
+
+[2022-07-04 03:47]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3204 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 03:51]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 886 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 04:05]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3199 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 04:16]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 1878 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 04:18]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2831 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 04:43]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-04 04:47]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-04 04:49]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-04 05:12]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2831 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 05:25]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 1908 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 05:47]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2023 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 06:23]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3214 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 06:32]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3317 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 06:59]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 192 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 07:27]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3380 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 09:02]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2211 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 09:53]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3240 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 10:58]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2687 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 11:18]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3405 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 11:18]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3405 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 11:19]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3405 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 11:34]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2940 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 12:41]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3405 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 13:04]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2816 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 13:15]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3405 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 14:05]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3317 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 14:48]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3420 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 14:56]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3317 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 15:11]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3390 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 15:37]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3066 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 15:48]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 886 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 16:21]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2757 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 19:02]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3000 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 20:04]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 1192 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-04 21:27]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3066 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-05 00:52]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3317 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-05 01:19]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3423 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-05 01:38]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2230 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-05 03:48]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3452 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-05 04:13]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2029 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-05 04:55]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3317 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-05 06:04]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 379 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-05 06:53]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2776 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-05 07:16]
+Error ID: 1054
+Callback: 
+Query: UPDATE houses SET house_desc = 'Ateneo Family' WHERE id = 437
+[!] Unknown column 'house_desc' in 'field list'
+
+[2022-07-05 07:43]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3317 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-05 07:44]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3317 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-05 08:00]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3317 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-05 08:07]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3317 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-05 08:14]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2029 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-05 08:44]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2029 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-05 10:09]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2832 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-05 13:13]
+Error ID: 1146
+Callback: OnQueryFinished
+Query: SELECT * FROM actor
+[!] Table 'exodus123.actor' doesn't exist
+
+[2022-07-05 13:21]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 1221 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-05 13:34]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 886 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-05 13:42]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 886 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-05 18:45]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2151 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-05 19:01]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2023 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-05 20:03]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3560 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-06 03:19]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3317 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-06 04:25]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 1699 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-06 04:28]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3442 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-06 05:11]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2541 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-06 06:31]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2476 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-06 07:17]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3593 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-06 08:07]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 799 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-06 08:28]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3185 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-06 08:53]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2023 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-06 09:24]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 2023 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-06 10:13]
+Error ID: 1064
+Callback: OnPlayerDMVRelease
+Query: SELECT id, tickets, modelid FROM vehicles WHERE ownerid = 3405 AND impounded = 1 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-06 10:24]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3528 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-06 11:46]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 1250 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-06 11:52]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 1192 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-06 12:09]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3575 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-06 13:11]
+Error ID: 1064
+Callback: 
+Query: UPDATE users SET bindslot1 = 'take her gun out and flicks safety[OFF]ready to shoot anytime'' WHERE uid = 3487
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''take her gun out and flicks safety[OFF]ready to shoot anytime'' WHERE uid = ...' at line 1
+
+[2022-07-06 13:49]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3594 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-06 13:49]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3594 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
+[2022-07-06 13:52]
+Error ID: 1064
+Callback: OnPlayerUseCarStorage
+Query: SELECT id FROM vehicles WHERE ownerid = 3199 LIMIT -1, 1
+[!] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1, 1' at line 1
+
