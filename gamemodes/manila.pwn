@@ -23,7 +23,6 @@
 #include <weapon-config> // Custom Damage
 #include <selection> // New Selection Dialog
 #include <tp> // Anti Teleport
-//#include <center> // MsgBox Center
 #include <discord-connector>
 #include <discord-command>
 #include <progress2>
@@ -74,9 +73,7 @@
 #define MYSQL_USERNAME  "rev"
 #define MYSQL_PASSWORD  "mnlmnl@123"
 
-//#define MYSQL_DATABASE  "1"
-//#define MYSQL_USERNAME  "1"
-//#define MYSQL_PASSWORD  "1"
+
 
 #define SERVER_MUSIC_URL ""SERVER_URL"/music"
 #define SERVER_FETCH_URL ""SERVER_URL"/music"
@@ -742,10 +739,6 @@ new Border999;
 new Border0;
 new Border00;
 new Border000;
-
-// Speedo
-
-//new PlayerText:ModernPlayerText[MAX_PLAYERS][2];
 
 // Actor Job Represent
 new ActorJob[14];
@@ -7724,7 +7717,7 @@ EnterCheck(playerid)
 		        }
 
 		        //format(string, sizeof(string), "~r~-$%i", BusinessInfo[id][bEntryFee]);
-		        //Dyuze(playerid, "Notice", string);
+		       
 
 		        BusinessInfo[id][bCash] += BusinessInfo[id][bEntryFee];
 		        GivePlayerCash(playerid, -BusinessInfo[id][bEntryFee]);
@@ -7811,7 +7804,7 @@ EnterCheck(playerid)
 		if(!EntranceInfo[id][eFreeze])
 		{
 			//format(string, sizeof(string), "~w~%s", EntranceInfo[id][eName]);
-		    //Dyuze(playerid, "Notice", string);
+		   
 		}
 		return 1;
 	}
@@ -8481,7 +8474,7 @@ DisplayInventory(playerid, targetid = INVALID_PLAYER_ID)
 		Skates\t%s\n\
 		Drivers License\t%s\n\
 		Dirty Cash:\t%i\n\
-		Taco:\t%i\n\
+		Burger:\t%i\n\
 		Coke:\t%i\n\
 		Burrito:\t%i", pData[playerid][pPot],
 		GetPlayerCapacity(CAPACITY_WEED),
@@ -25386,9 +25379,9 @@ public OnGameModeInit()
 	CreateDynamic3DTextLabel("Front Deskt\nGun License Exam\n"SVRCLR"(( Type '/getweplic' to take a weapon license exam. ))", COLOR_GREY, 45.5967,2039.3578,733.8567, 10.0);
 	CreateDynamicPickup(1239, 1, 45.5967,2039.3578,733.8567);
 
-	CreateDynamic3DTextLabel("MINISTOP\nCost: $2000\n"SVRCLR"(( Type '/ministop' to buy. ))", COLOR_GREY, 1315.4165,-887.7797,39.6562, 10.0);
-	CreateDynamicPickup(1274, 1,1315.4165,-887.7797,39.6562);
-	CreateDynamicMapIcon(1315.4165,-887.7797,39.6562,17,0);
+	CreateDynamic3DTextLabel("MINISTOP\nCost: $2000\n"SVRCLR"(( Type '/ministop' to buy. ))", COLOR_GREY, 936.2162,-1653.4504,13.6662, 10.0);
+	CreateDynamicPickup(1274, 1,936.2162,-1653.4504,13.6662);
+	CreateDynamicMapIcon(936.2162,-1653.4504,13.6662,17,0);
 		
 	CreateDynamic3DTextLabel("Insurance\nCost: $5000\n"SVRCLR"(( Type '/buyinsurance' to spawn here. ))", COLOR_DOCTOR, 1160.9899,-1331.9058,14.5401, 10.0);
 	CreateDynamicPickup(1240, 1,  1160.9899,-1331.9058,14.5401);
@@ -80782,12 +80775,6 @@ CMD:help(playerid,  params[])
 	SCM(playerid, COLOR_WHITE, "Other Commands: /cellphonehelp /carhelp /househelp /toyhelp /renthelp /jobhelp /leaderhelp /animhelp /fishhelp /insurehelp /businesshelp /bankhelp");
 	return 1;
 }
-/*CMD:help(playerid)
-{
-	ShowDialogToPlayer(playerid, DIALOG_HELP);
-	return 1;
-}*/
-
 
 ShowMembersDialog(playerid) 
 {
@@ -80995,27 +80982,6 @@ CMD:atm(playerid,  params[])
 	}
 	return 1;
 }
-/*CMD:awithdraw(playerid,  params[])
-{	
-	if(pData[playerid][pVerifySystem])
-	{
-		SCM(playerid, COLOR_SYNTAX, "You are not verified. Goto Discord #verification channel.");
-        
-        return 1;
-	}
-    for(new i = 0; i < sizeof(atmMachines); i ++)
-	{
-	    if(IsPlayerInRangeOfPoint(playerid, 3.0, atmMachines[i][atmX], atmMachines[i][atmY], atmMachines[i][atmZ]))
-	    {
-			ShowDialogToPlayer(playerid, DIALOG_ATM);
-	        return 1;
-		}
-	}
-
-	SCM(playerid, COLOR_SYNTAX, "You are not in range of any ATM machines.");
-	return 1;
-}*/
-
 CMD:fixplayerid(playerid,  params[])
 {	
 	if(pData[playerid][pVerifySystem])
@@ -81632,9 +81598,7 @@ stock UpdatePlayerVehicleParkPosition(playerid, vehicleid, Float:newx, Float:new
 {
 	if(VehicleInfo[playerid][vID] != 0)
 	{
-		/*if(!isnull(VehicleInfo[playerid][playervehicleid][pvPlate])) {
-			SetVehicleNumberPlate(playervehicleid, VehicleInfo[playerid][playervehicleid][pvPlate]);
-		}*/
+
 
 		VehicleInfo[playerid][vPosX] = newx;
 		VehicleInfo[playerid][vPosY] = newy;
@@ -81645,8 +81609,7 @@ stock UpdatePlayerVehicleParkPosition(playerid, vehicleid, Float:newx, Float:new
 		VehicleInfo[playerid][vWorld] = GetPlayerVirtualWorld(playerid);
 		VehicleInfo[playerid][vInterior] = GetPlayerInterior(playerid);
 
-		/*mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE vehicles SET pos_x = '%f', pos_y = '%f', pos_z = '%f', pos_a = '%f', interior = %i, world = %i WHERE id = %i", VehicleInfo[vehicleid][vPosX], VehicleInfo[vehicleid][vPosY], VehicleInfo[vehicleid][vPosZ], VehicleInfo[vehicleid][vPosA], VehicleInfo[vehicleid][vInterior], VehicleInfo[vehicleid][vWorld], VehicleInfo[vehicleid][vID]);
-		mysql_tquery(connectionID, queryBuffer);*/
+	
 
 		mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE vehicles SET pos_x = '%f', pos_y = '%f', pos_z = '%f', pos_a = '%f', nterior = %i, world = %i, health = '%f' WHERE id = %i", vehicleid, newx, vehicleid, newy, vehicleid, newz, vehicleid, newangle, vehicleid, VehicleInfo[playerid][vWorld], vehicleid, VehicleInfo[playerid][vInterior], vehicleid, VehicleInfo[playerid][vHealth], VehicleInfo[vehicleid][vID]);
 		mysql_tquery(connectionID, queryBuffer);
@@ -83593,44 +83556,6 @@ CMD:sellcar(playerid,  params[])
 	return 1;
 }
 
-/*CMD:sellmycar(playerid,  params[])
-{	
-	if(pData[playerid][pVerifySystem])
-	{
-		SCM(playerid, COLOR_SYNTAX, "You are not verified. Goto Discord #verification channel.");
-        
-        return 1;
-	}
- 	new vehicleid = GetPlayerVehicleID(playerid);
-
-	if(!vehicleid || !IsVehicleOwner(playerid, vehicleid))
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "You are not inside any vehicle of yours.");
-	}
-	if(!IsPlayerInRangeOfPoint(playerid, 8.0, 542.0433, -1293.5909, 17.2422))
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "You are not in range of the Grotti car dealership.");
-	}
-	if(strcmp(params, "confirm", true) != 0)
-	{
-	    SCM(playerid, COLOR_SYNTAX, "Usage: /sellmycar [confirm]");
-	    SM(playerid, COLOR_WHITE, "This command permanently deletes your vehicle. You will receive $%i back.", percent(VehicleInfo[vehicleid][vPrice], 75));
-	    return 1;
-	}
-
-	GivePlayerCash(playerid, percent(VehicleInfo[vehicleid][vPrice], 75));
-
-	SM(playerid, COLOR_YELLOW, "You have sold your %s to the dealership and received $%i back.", GetVehicleName(vehicleid), percent(VehicleInfo[vehicleid][vPrice], 75));
-    Log_Write("log_property", "%s (uid: %i) sold their %s (id: %i) to the dealership for $%i", GetPlayerNameEx(playerid), pData[playerid][pID], GetVehicleName(vehicleid), VehicleInfo[vehicleid][vID], percent(VehicleInfo[vehicleid][vPrice], 75));
-
-	mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "DELETE FROM vehicles WHERE id = %i", VehicleInfo[vehicleid][vID]);
-	mysql_tquery(connectionID, queryBuffer);
-
-	DespawnVehicle(vehicleid, false);
-
-	return 1;
-}*/
-
 CMD:chop(playerid,  params[])
 {	
 	if(pData[playerid][pVerifySystem])
@@ -84159,41 +84084,6 @@ CMD:vipinfo(playerid,  params[])
 	SM(playerid, COLOR_WHITE, "Next Invite: %s", cooldown);
 	return 1;
 }
-/*
-CMD:vipnumber(playerid,  params[])
-{	
-	if(pData[playerid][pVerifySystem])
-	{
-		SCM(playerid, COLOR_SYNTAX, "You are not verified. Goto Discord #verification channel.");
-        
-        return 1;
-	}
-	new number;
-
-	if(!pData[playerid][pDonator])
-	{
-		return SCM(playerid, COLOR_SYNTAX, "You can't use this command as you don't have a VIP subscription.");
-	}
-	if(sscanf(params, "i", number))
-	{
-	    SCM(playerid, COLOR_SYNTAX, "Usage: /vipnumber [phone number]");
-	    SCM(playerid, COLOR_WHITE, "This command costs $100,000 and changes your phone number to your chosen one.");
-	    return 1;
-	}
-	if(pData[playerid][pCash] < 100000)
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "You need at least $100,000 for pay for this.");
-	}
-	if(number == 0 || number == 911 || number == 6397 || number == 6324 || number == 8294 || number == 69)
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "Invalid number.");
-	}
-
-	mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "SELECT uid FROM users WHERE phone = %i", number);
-	mysql_tquery(connectionID, queryBuffer, "OnPlayerBuyPhoneNumber", "ii", playerid, number);
-	return 1;
-}
-*/
 CMD:setfare(playerid,  params[])
 {	
 	if(pData[playerid][pVerifySystem])
@@ -84745,13 +84635,7 @@ CMD:setfaction(playerid,  params[])
 	    	rankid = FactionInfo[factionid][fRankCount] - 1;
 		}
 
-	    /*if(rankid == FactionInfo[factionid][fRankCount] - 1)
-	    {
-	        GetPlayerName(targetid, FactionInfo[factionid][fLeader], MAX_PLAYER_NAME);
-
-	    	mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factions SET leader = '%e' WHERE id = %i", FactionInfo[factionid][fLeader], factionid);
-			mysql_tquery(connectionID, queryBuffer);
-		}*/
+	 
 
 		pData[targetid][pFaction] = factionid;
 		pData[targetid][pFactionRank] = rankid;
@@ -84766,32 +84650,6 @@ CMD:setfaction(playerid,  params[])
 
 	return 1;
 }
-
-/*CMD:factions(playerid,  params[])
-{	
-	if(pData[playerid][pVerifySystem])
-	{
-		SCM(playerid, COLOR_SYNTAX, "You are not verified. Goto Discord #verification channel.");
-        
-        return 1;
-	}
-	if(pData[playerid][pAdmin] < 0)
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "You are not authorized to use this command.");
-	}
-    SCM(playerid, SERVER_COLOR, "Factions:");
-
-	for(new i = 0; i < MAX_FACTIONS; i ++)
-	{
-	    if(FactionInfo[i][fType] != FACTION_NONE)
-	    {
-	        mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "SELECT COUNT(*) FROM users WHERE faction = %i", i);
-	        mysql_tquery(connectionID, queryBuffer, "OnPlayerListFactions", "ii", playerid, i);
-	    }
-	}
-
-	return 1;
-}*/
 
 CMD:factions(playerid,  params[])
 {	
@@ -85232,68 +85090,6 @@ CMD:radio(playerid,  params[])
 	return 1;
 }
 
-/*CMD:d(playerid,  params[])
-{	
-	if(pData[playerid][pVerifySystem])
-	{
-		SCM(playerid, COLOR_SYNTAX, "You are not verified. Goto Discord #verification channel.");
-        
-        return 1;
-	}
-    if(isnull(params))
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "Usage: /d [department radio]");
-	}
-	if(pData[playerid][pFaction] == -1)
-    {
-        return SCM(playerid, COLOR_SYNTAX, "You are not apart of any faction at the moment.");
-	}
-	if(pData[playerid][pToggleRadio])
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "You can't speak in your radio as you have it toggled.");
-	}
-	if(pData[playerid][pInjured])
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "You cannot use this command while dead.");
-	}
-	if(pData[playerid][pCuffed])
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "You cannot use this command while cuffed");
-	}
-	if(pData[playerid][pTied])
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "You cannot use this command while tied.");
-	}
-
-	switch(FactionInfo[pData[playerid][pFaction]][fType])
-	{
-	    case FACTION_POLICE, FACTION_MEDIC, FACTION_GOVERNMENT, FACTION_FEDERAL:
-	    {
-			foreach(new i : Player)
-			{
-			    if((!pData[i][pToggleRadio]) && (GetFactionType(i) == FACTION_POLICE || GetFactionType(i) == FACTION_MEDIC || GetFactionType(i) == FACTION_GOVERNMENT || GetFactionType(i) == FACTION_FEDERAL))
-			    {
-			        if(strlen(params) > MAX_SPLIT_LENGTH)
-			        {
-			        	SM(i, COLOR_YELLOW, "** [%s] %s: %.*s... **", FactionInfo[pData[playerid][pFaction]][fName], GetRPName(playerid), MAX_SPLIT_LENGTH, params);
-			        	SM(i, COLOR_YELLOW, "** [%s] %s: ...%s **", FactionInfo[pData[playerid][pFaction]][fName], GetRPName(playerid), params[MAX_SPLIT_LENGTH]);
-					}
-					else
-					{
-					    SM(i, COLOR_YELLOW, "** [%s] %s: %s **", FactionInfo[pData[playerid][pFaction]][fName], GetRPName(playerid), params);
-					}
-				}
-			}
-		}
-		default:
-		{
-		    SCM(playerid, COLOR_SYNTAX, "Your faction is not authorized to speak in department radio.");
-		}
-	}
-
-    SetPlayerBubbleText(playerid, 5.0, COLOR_YELLOW, "(Radio) %s",params);
-	return 1;
-}*/
 
 CMD:d(playerid,  params[])
 {	
@@ -86754,10 +86550,6 @@ CMD:charge(playerid,  params[])
 	{
 	    return SCM(playerid, COLOR_SYNTAX, "The player specified is disconnected.");
 	}
-	/*if(targetid == playerid)
-	{
-		return SCM(playerid, COLOR_SYNTAX, "You can't charge yourself.");
-	}*/
 	if(pData[targetid][pWantedLevel] >= 6)
 	{
 	    return SCM(playerid, COLOR_SYNTAX, "This player is already at the maximum wanted level (6).");
@@ -86820,89 +86612,6 @@ cmd:receipt(playerid,  params[])
 	}
 	return 1;
 }
-/*CMD:arrest(playerid,  params[])
-{	
-	if(pData[playerid][pVerifySystem])
-	{
-		SCM(playerid, COLOR_SYNTAX, "You are not verified. Goto Discord #verification channel.");
-        
-        return 1;
-	}
-	new string[128], targetid, minutes, fine;
-
-	if(!IsLawEnforcement(playerid))
-    {
-        return SCM(playerid, COLOR_SYNTAX, "You can't use this command as you aren't apart of law enforcement.");
-	}
-	if(pData[playerid][pDuty] == 0)
-	{
-		return SCM(playerid, COLOR_GREY2, "You can't use this command while off-duty.");
-	}
-	if(sscanf(params, "u", targetid))
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "Usage: /arrest [playerid]");
-	}
-	if(!IsPlayerConnected(targetid) || !IsPlayerInRangeOfPlayer(playerid, targetid, 5.0))
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "The player specified is disconnected or out of range.");
-	}
-	if(targetid == playerid)
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "You can't arrest yourself.");
-	}
-	if(!pData[targetid][pCuffed])
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "That player is not handcuffed.");
-	}
-	if(!pData[targetid][pWantedLevel])
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "You can't arrest a player with no active charges. /charge to add them.");
-	}
-
-	for(new i = 0; i < sizeof(arrestPoints); i ++)
-	{
-	    if(IsPlayerInRangeOfPoint(playerid, 5.0, arrestPoints[i][0], arrestPoints[i][1], arrestPoints[i][2]))
-	    {
-	        minutes = pData[targetid][pWantedLevel] * 5;
-	        fine = pData[targetid][pWantedLevel] * 200;
-
-	        if(pData[targetid][pDonator] == 1)
-			{
-	            SM(targetid, COLOR_VIP, "** Donator perk: Your %i minutes of jail time has been reduced by 25 percent to %i minutes.", minutes, percent(minutes, 25));
-	            minutes = percent(minutes, 75);
-	        }
-	        else if(pData[targetid][pDonator] >= 2)
-			{
-	            SM(targetid, COLOR_VIP, "** Donator perk: Your %i minutes of jail time has been reduced by 50 percent to %i minutes.", minutes, percent(minutes, 50));
-	            minutes = percent(minutes, 50);
-	        }
-
-		    pData[targetid][pJailType] = 3;
-    		pData[targetid][pJailTime] = minutes * 20;
-			pData[targetid][pWantedLevel] = 0;
-			pData[targetid][pArrested]++;
-
-			SetPlayerInJail(targetid);
-			GivePlayerCash(targetid, -fine);
-
-			mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE users SET wantedlevel = 0, arrested = %i WHERE uid = %i", pData[targetid][pArrested], pData[targetid][pID]);
-			mysql_tquery(connectionID, queryBuffer);
-
-			mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "DELETE FROM charges WHERE uid = %i", pData[targetid][pID]);
-			mysql_tquery(connectionID, queryBuffer);
-
-		    format(string, sizeof(string), "> News"WHITE": %s %s has completed their arrest. %s has been sent to jail for %i weeks.", FactionRanks[pData[playerid][pFaction]][pData[playerid][pFactionRank]], GetRPName(playerid), GetRPName(targetid), minutes);
-			SMA(COLOR_LIGHTGREEN, string);
-
-    		SM(targetid, COLOR_AQUA, "** You've been arrested for %i minutes, fine: $%i.", minutes, fine);
-    		Log_Write("log_faction", "%s (uid: %i) has arrested %s (uid: %i) for %i minutes, fine: $%i.", GetPlayerNameEx(playerid), pData[playerid][pID], GetPlayerNameEx(targetid), pData[targetid][pID], minutes, fine);
-    		return 1;
-		}
-	}
-
-	SCM(playerid, COLOR_SYNTAX, "You are not in range of any arrest points.");
-    return 1;
-}*/
 CMD:addjailtime(playerid,  params[])
 {	
 	if(pData[playerid][pVerifySystem])
@@ -87126,36 +86835,6 @@ CMD:listbed(playerid,  params[])
 
 	return 1;
 }
-/*CMD:wanted(playerid,  params[])
-{	
-	if(pData[playerid][pVerifySystem])
-	{
-		SCM(playerid, COLOR_SYNTAX, "You are not verified. Goto Discord #verification channel.");
-        
-        return 1;
-	}
-    if(!IsLawEnforcement(playerid) && !PlayerHasJob(playerid, JOB_LAWYER))
-    {
-        return SCM(playerid, COLOR_SYNTAX, "You can't use this command as you aren't apart of law enforcement or a lawyer.");
-	}
-	if(pData[playerid][pDuty] == 0)
-	{
-		return SCM(playerid, COLOR_GREY2, "You can't use this command while off-duty.");
-	}
-
-	SCM(playerid, SERVER_COLOR, "Wanted Players:");
-
-	foreach(new i : Player)
-	{
-	    if(pData[i][pWantedLevel] > 0)
-	    {
-	        SM(playerid, COLOR_GREY2, "(ID: %i) %s - Wanted Level: %i", i, GetRPName(i), pData[i][pWantedLevel]);
-		}
-	}
-
-	return 1;
-}*/
-
 CMD:hfind(playerid,  params[])
 {	
 	if(pData[playerid][pVerifySystem])
@@ -87609,12 +87288,7 @@ CMD:ram(playerid,  params[])
 		 		mysql_tquery(connectionID, queryBuffer, "OnPlayerRamFurnitureDoor", "iii", playerid, i, Streamer_GetExtraInt(i, E_OBJECT_INDEX_ID));
 		    	return 1;
 			}
-			/*else if((id = GetNearbyLand(playerid)) >= 0 && Streamer_GetExtraInt(i, E_OBJECT_TYPE) == E_OBJECT_LAND && Streamer_GetExtraInt(i, E_OBJECT_EXTRA_ID) == LandInfo[id][lID])
-			{
-			    mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "SELECT door_opened FROM landobjects WHERE id = %i", Streamer_GetExtraInt(i, E_OBJECT_INDEX_ID));
-				mysql_tquery(connectionID, queryBuffer, "OnPlayerRamLandDoor", "iii", playerid, i, Streamer_GetExtraInt(i, E_OBJECT_INDEX_ID));
-			    return 1;
-			}*/
+		
 		}
 	}	
 	if((id = GetNearbyHouse(playerid)) >= 0)
@@ -88026,58 +87700,6 @@ CMD:mdc(playerid,  params[])
 	ShowPlayerDialog(playerid, DIALOG_MDC, DIALOG_STYLE_LIST, "Mobile data computer", "Wanted suspects\nPlayer lookup\nVehicle lookup", "Select", "Cancel");
 	return 1;
 }
-
-/*CMD:clearwanted(playerid,  params[])
-{	
-	if(pData[playerid][pVerifySystem])
-	{
-		SCM(playerid, COLOR_SYNTAX, "You are not verified. Goto Discord #verification channel.");
-        
-        return 1;
-	}
-    new targetid;
-
-    if(!IsLawEnforcement(playerid))
-    {
-        return SCM(playerid, COLOR_SYNTAX, "You can't use this command as you aren't apart of law enforcement.");
-	}
-	if(pData[playerid][pDuty] == 0)
-	{
-		return SCM(playerid, COLOR_GREY2, "You can't use this command while off-duty.");
-	}
-	if(sscanf(params, "u", targetid))
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "Usage: /clearwanted [playerid]");
-	}
-	if((!IsPlayerInRangeOfPoint(playerid, 50.0, 1229.3544, -1311.8627, 796.7859)) && !(596 <= GetVehicleModel(GetPlayerVehicleID(playerid)) <= 599))
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "You are not inside a police car or the police station.");
-	}
-	if(!IsPlayerConnected(targetid))
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "The player specified is disconnected.");
-	}
-	if(targetid == playerid)
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "You can't clear yourself.");
-	}
-	if(!pData[targetid][pWantedLevel])
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "That player has no active charges to clear.");
-	}
-
-	pData[targetid][pWantedLevel] = 0;
-
-	mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "DELETE FROM charges WHERE uid = %i", pData[targetid][pID]);
-	mysql_tquery(connectionID, queryBuffer);
-
-	mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE users SET wantedlevel = 0 WHERE uid = %i", pData[targetid][pID]);
-	mysql_tquery(connectionID, queryBuffer);
-
-	SM(targetid, COLOR_WHITE, "** Your crimes were cleared by %s.", GetRPName(playerid));
-	SendFactionMessage(pData[playerid][pFaction], COLOR_ROYALBLUE, "HQ: %s %s has cleared %s's charges and wanted level.", FactionRanks[pData[playerid][pFaction]][pData[playerid][pFactionRank]], GetRPName(playerid), GetRPName(targetid));
-	return 1;
-}*/
 
 CMD:vticket(playerid,  params[])
 {	
@@ -88549,132 +88171,6 @@ CMD:stretcher(playerid,  params[])
 	SCM(playerid, COLOR_SYNTAX, "There are no unoccupied seats left. Find another vehicle.");
 	return 1;
 }
-/*
-CMD:cleanbody(playerid,  params[])
-{	
-	if(pData[playerid][pVerifySystem])
-	{
-		SCM(playerid, COLOR_SYNTAX, "You are not verified. Goto Discord #verification channel.");
-        
-        return 1;
-	}
-	new targetid;
-	if(GetFactionType(playerid) != FACTION_MEDIC)
-    {
-        return SCM(playerid, COLOR_SYNTAX, "You can't use this command as you aren't a medic.");
-	}
-	if(pData[playerid][pDuty] == 0)
-	{
-		return SCM(playerid, COLOR_GREY2, "You can't use this command while off-duty.");
-	}
-	if(sscanf(params, "u", targetid))
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "Usage: /cleanbody [playerid]");
-	}
-	if(targetid == playerid)
-	{
-	    return SCM(playerid, COLOR_GREY2, "You can't use this command on yourself.");
-	}
-    if(!PlayerUseAnims(playerid))
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "You're currently unable to use animations at this moment.");
-	}
-	if(!IsPlayerInRangeOfPoint(playerid, 10.0, pData[targetid][pBodyPosX], pData[targetid][pBodyPosX], pData[targetid][pBodyPosX])) {
-		return SCM(playerid, COLOR_SYNTAX, "You are not in range of any dead bodies.");
-	}
-	GameTextForPlayer(playerid, "~g~Cleaning...", 10000, 3);
-	ApplyAnimation(playerid, "BOMBER", "BOM_Plant_Loop", 4.1, 1, 0, 0, 0, 0, 1);
-	TogglePlayerControllable(playerid, 0);
-	SetTimerEx("DEATHACTOREX", 10000, false, "ii", playerid, targetid);
-	return 1;
-}
-*/
-/*CMD:deliverpatient(playerid,  params[])
-{	
-	if(pData[playerid][pVerifySystem])
-	{
-		SCM(playerid, COLOR_SYNTAX, "You are not verified. Goto Discord #verification channel.");
-        
-        return 1;
-	}
-	new targetid, amount = 5000;
-
-	if(GetFactionType(playerid) != FACTION_MEDIC)
-    {
-        return SCM(playerid, COLOR_SYNTAX, "You can't use this command as you aren't a medic.");
-	}
-	if(pData[playerid][pDuty] == 0)
-	{
-		return SCM(playerid, COLOR_GREY2, "You can't use this command while off-duty.");
-	}
-	if(sscanf(params, "u", targetid))
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "Usage: /deliverpatient [playerid]");
-	}
-    if(!IsPlayerInRangeOfPoint(playerid, 5.0, 2007.6256, -1410.2455, 16.9922) && !IsPlayerInRangeOfPoint(playerid, 5.0, 1141.6477, -1326.3889, 13.6398) && !IsPlayerInRangeOfPoint(playerid, 5.0, 2070.4307, -1422.8580, 48.331) && !IsPlayerInRangeOfPoint(playerid, 5.0, 1161.1458,-1364.4767,26.6485)
-	&& !IsPlayerInRangeOfPoint(playerid, 5.0, 1510.7773, -2151.7322, 13.7483) && !IsPlayerInRangeOfPoint(playerid, 5.0, 1480.4819, -2166.9712, 35.2578) && !IsPlayerInRangeOfPoint(playerid, 5.0, 1539.1060, -2167.2058, 35.2578))
-    {
-        return SCM(playerid, COLOR_SYNTAX, "You are not in range of any delivery points at the hospital.");
-	}
-	if(!IsPlayerConnected(targetid) || !IsPlayerInRangeOfPlayer(playerid, targetid, 7.0))
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "The player specified is disconnected or out of range.");
-	}
-	if(targetid == playerid)
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "You can't use this command on yourself.");
-	}
-	if(!pData[targetid][pInjured])
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "That player is not injured.");
-	}
-
-    pData[targetid][pInjured] = 0;
-	pData[targetid][pDelivered] = 0;
-	pData[playerid][pTotalPatients]++;
-
-	if(IsPlayerInRangeOfPoint(playerid, 5.0, 2007.6256, -1410.2455, 16.9922) || IsPlayerInRangeOfPoint(playerid, 5.0, 2070.4307,-1422.8580,48.331))
-	{
-	    SetPlayerVirtualWorld(targetid, HOSPITAL_COUNTY);
-	}
-	else if(IsPlayerInRangeOfPoint(playerid, 5.0, 1147.3577, -1345.3729, 13.6328) || IsPlayerInRangeOfPoint(playerid, 5.0, 1161.1458,-1364.4767,26.6485))
-	{
-		SetPlayerVirtualWorld(targetid, HOSPITAL_ALLSAINTS);
-	}
-
-	if(GetFactionType(targetid) == FACTION_POLICE || GetFactionType(targetid) == FACTION_MEDIC)
-	{
-        SCM(targetid, COLOR_DOCTOR, "You have not been billed for your stay. You also keep all of your weapons!");
-    }
-	else
-	{
-		SCM(targetid, COLOR_DOCTOR, "You have been billed $200 for your stay. You also keep all of your weapons!");
-	}
-
-	new rand = random(sizeof(hospitalspawns));
-	SetFreezePos(targetid, hospitalspawns[rand][0], hospitalspawns[rand][1], hospitalspawns[rand][2]);
-	SetPlayerFacingAngle(targetid, hospitalspawns[rand][3]);
-
-	SetPlayerInterior(targetid, 1);
-	SetCameraBehindPlayer(targetid);
-
-	if(!(GetFactionType(targetid) == FACTION_POLICE || GetFactionType(targetid) == FACTION_MEDIC))
-	{
-		GivePlayerCash(targetid, -200);
-		GameTextForPlayer(targetid, "~w~Discharged~n~~r~-$200", 5000, 1);
-	}
-
-	//TogglePlayerControllable(targetid, 1);
-
-	SetPlayerHealth(targetid, pData[targetid][pSpawnHealth]);
-	SetScriptArmour(targetid, pData[targetid][pSpawnArmor]);
-	UpdateDynamic3DTextLabelText(InjuredLabel[targetid], COLOR_DOCTOR, "");
-    pData[targetid][pAcceptedEMS] = INVALID_PLAYER_ID;
-	GivePlayerCash(playerid, amount);
-	SM(playerid, COLOR_AQUA, "You have delivered %s to the hospital and earned "SVRCLR"$%i{CCFFFF}.", GetRPName(targetid), amount);
-	return 1;
-}*/
-
 forward UseMedkit(playerid);
 public UseMedkit(playerid)
 {
@@ -89804,27 +89300,6 @@ CMD:masked(playerid,  params[])
 	return 1;
 }
 
-/*CMD:hbadge(playerid,  params[])
-{	
-	if(pData[playerid][pVerifySystem])
-	{
-		SCM(playerid, COLOR_SYNTAX, "You are not verified. Goto Discord #verification channel.");
-        
-        return 1;
-	}
-	new factionid;
-	if(GetFactionType(playerid) != FACTION_HITMAN)
-	{
-	    return SCM(playerid, COLOR_SYNTAX, "You can't use this command as you're not a hitman.");
-	}
-	if(sscanf(params, "i", factionid))
-	{
-	    SCM(playerid, COLOR_SYNTAX, "Usage: /hbadge [factionid]");
-		return 1;
-	}
-	SetPlayerColor(playerid, FactionInfo[factionid][fColor] & ~0xff);
-    return 1;
-}*/
 CMD:dmvrelease(playerid,  params[])
 {	
 	if(pData[playerid][pVerifySystem])
@@ -90150,186 +89625,7 @@ CMD:editlocker(playerid,  params[])
 
 		SCM(playerid, COLOR_ERROR, "use the command /editfaction skin for the uniforms!");
 	}
-	/*else if(!strcmp(option, "weapons", true))
-	{
-	    if(FactionInfo[LockerInfo[lockerid][lFaction]][fType] == FACTION_HITMAN)
-	    {
-	        return SendClientMessage(playerid, COLOR_GREY, "Weapons for hitman agency lockers cannot be edited in-game.");
-	    }
-	    new inputtext[24], opt2[8], amount;
-	    if(sscanf(param, "s[24]s[8]i", inputtext, opt2, amount))
-	    {
-	        SendClientMessage(playerid, COLOR_SYNTAX, "USAGE: /editlocker [lockerid] [weapons] [weaponname] [option] [amount]");
-            SendClientMessage(playerid, COLOR_GREEN, "Weapon Name: Kevlar, Medkit, Nitestick, Mace, Deagle, Shotgun, M4, MP5, Spas12, Sniper, Camera, FireExt, Painkillers");
-			SendClientMessage(playerid, COLOR_YELLOW, "Options: Allow, Price");
-			SendClientMessage(playerid, COLOR_ORANGE, "Amount: Price (amount), Allow (1 or 0)");
-	        return 1;
-	    }
-		if(!strcmp(opt2, "allow", true))
-		{
-		    if(!(0 <= amount <= 1)) return SendClientMessage(playerid, COLOR_GREY, "Amount can be 1 or 0");
-			if(!strcmp(inputtext, "Kevlar", true))
-			{
-				LockerInfo[lockerid][locKevlar][0] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET weapon_kevlar = %i WHERE id = %i", LockerInfo[lockerid][locKevlar][0], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			else if(!strcmp(inputtext, "Medkit", true))
-			{
-                LockerInfo[lockerid][locMedKit][0] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET weapon_medkit = %i WHERE id = %i", LockerInfo[lockerid][locMedKit][0], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			else if(!strcmp(inputtext, "Nitestick", true))
-			{
-                LockerInfo[lockerid][locNitestick][0] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET weapon_nitestick = %i WHERE id = %i", LockerInfo[lockerid][locNitestick][0], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			else if(!strcmp(inputtext, "Mace", true))
-			{
-                LockerInfo[lockerid][locMace][0] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET weapon_mace = %i WHERE id = %i", LockerInfo[lockerid][locMace][0], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-            else if(!strcmp(inputtext, "Deagle", true))
-			{
-                LockerInfo[lockerid][locDeagle][0] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET weapon_deagle = %i WHERE id = %i", LockerInfo[lockerid][locDeagle][0], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			else if(!strcmp(inputtext, "Shotgun", true))
-			{
-			    LockerInfo[lockerid][locShotgun][0] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET weapon_shotgun = %i WHERE id = %i", LockerInfo[lockerid][locShotgun][0], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			else if(!strcmp(inputtext, "MP5", true))
-			{
-                LockerInfo[lockerid][locMP5][0] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET weapon_mp5 = %i WHERE id = %i", LockerInfo[lockerid][locMP5][0], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			else if(!strcmp(inputtext, "M4", true))
-			{
-                LockerInfo[lockerid][locM4][0] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET weapon_m4 = %i WHERE id = %i", LockerInfo[lockerid][locM4][0], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			else if(!strcmp(inputtext, "Spas12", true))
-			{
-                LockerInfo[lockerid][locSpas12][0] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET weapon_spas12 = %i WHERE id = %i", LockerInfo[lockerid][locSpas12][0], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			else if(!strcmp(inputtext, "Sniper", true))
-			{
-                LockerInfo[lockerid][locSniper][0] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET weapon_sniper = %i WHERE id = %i", LockerInfo[lockerid][locSniper][0], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			else if(!strcmp(inputtext, "Camera", true))
-			{
-                LockerInfo[lockerid][locCamera][0] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET weapon_camera = %i WHERE id = %i", LockerInfo[lockerid][locCamera][0], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			else if(!strcmp(inputtext, "FireExt", true))
-			{
-                LockerInfo[lockerid][locFireExt][0] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET weapon_fire_extinguisher = %i WHERE id = %i", LockerInfo[lockerid][locFireExt][0], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			else if(!strcmp(inputtext, "Painkillers", true))
-			{
-                LockerInfo[lockerid][locPainKillers][0] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET weapon_painkillers = %i WHERE id = %i", LockerInfo[lockerid][locPainKillers][0], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			SCMf(playerid, COLOR_GREY, "Locker %i's %s status set to %i", lockerid, inputtext, amount);
-		}
-		else if(!strcmp(opt2, "price", true))
-		{
-            if(!strcmp(inputtext, "Kevlar", true))
-			{
-				LockerInfo[lockerid][locKevlar][1] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET price_kevlar = %i WHERE id = %i", LockerInfo[lockerid][locKevlar], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			else if(!strcmp(inputtext, "Medkit", true))
-			{
-                LockerInfo[lockerid][locMedKit][1] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET price_medkit = %i WHERE id = %i", LockerInfo[lockerid][locMedKit], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			else if(!strcmp(inputtext, "Nitestick", true))
-			{
-                LockerInfo[lockerid][locNitestick][1] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET price_nitestick = %i WHERE id = %i", LockerInfo[lockerid][locNitestick][1], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			else if(!strcmp(inputtext, "Mace", true))
-			{
-                LockerInfo[lockerid][locMace][1] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET price_mace = %i WHERE id = %i", LockerInfo[lockerid][locMace][1], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-            else if(!strcmp(inputtext, "Deagle", true))
-			{
-                LockerInfo[lockerid][locDeagle][1] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET price_deagle = %i WHERE id = %i", LockerInfo[lockerid][locDeagle][1], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			else if(!strcmp(inputtext, "Shotgun", true))
-			{
-			    LockerInfo[lockerid][locShotgun][1] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET price_shotgun = %i WHERE id = %i", LockerInfo[lockerid][locShotgun][1], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			else if(!strcmp(inputtext, "MP5", true))
-			{
-                LockerInfo[lockerid][locMP5][1] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET price_mp5 = %i WHERE id = %i", LockerInfo[lockerid][locMP5][1], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			else if(!strcmp(inputtext, "M4", true))
-			{
-                LockerInfo[lockerid][locM4][1] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET price_m4 = %i WHERE id = %i", LockerInfo[lockerid][locM4][1], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			else if(!strcmp(inputtext, "Spas12", true))
-			{
-                LockerInfo[lockerid][locSpas12][1] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET price_spas12 = %i WHERE id = %i", LockerInfo[lockerid][locSpas12][1], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			else if(!strcmp(inputtext, "Sniper", true))
-			{
-                LockerInfo[lockerid][locSniper][1] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET price_sniper = %i WHERE id = %i", LockerInfo[lockerid][locSniper][1], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			else if(!strcmp(inputtext, "Camera", true))
-			{
-                LockerInfo[lockerid][locCamera][1] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET price_camera = %i WHERE id = %i", LockerInfo[lockerid][locCamera][1], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			else if(!strcmp(inputtext, "FireExt", true))
-			{
-                LockerInfo[lockerid][locFireExt][1] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET price_fire_extinguisher = %i WHERE id = %i", LockerInfo[lockerid][locFireExt][1], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-			else if(!strcmp(inputtext, "Painkillers", true))
-			{
-                LockerInfo[lockerid][locPainKillers][1] = amount;
-                mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE factionlockers SET price_painkillers = %i WHERE id = %i", LockerInfo[lockerid][locPainKillers][1], LockerInfo[lockerid][lID]);
-	    		mysql_tquery(connectionID, queryBuffer);
-			}
-		    SCMf(playerid, COLOR_GREY, "Locker %i's %s price set to %i", lockerid, inputtext, amount);
-		}*/
+	
 	return 1;
 }
 CMD:removelocker(playerid,  params[])
@@ -91065,7 +90361,7 @@ CMD:spawnfire(playerid,  params[])
 	return 1;
 }
 
-/*CMD:number(playerid,  params[])
+CMD:number(playerid,  params[])
 {	
 	if(pData[playerid][pVerifySystem])
 	{
@@ -91090,7 +90386,7 @@ CMD:spawnfire(playerid,  params[])
 
 	SM(playerid, COLOR_GREY2, "(Name): %s, (Ph): %i", GetRPName(targetid), pData[targetid][pPhone]);
 	return 1;
-}*/
+}
 
 CMD:boombox(playerid,  params[])
 {	
@@ -91181,38 +90477,6 @@ CMD:boombox(playerid,  params[])
 
 	return 1;
 }
-
-/*CMD:switchspeedo(playerid,  params[])
-{	
-	if(pData[playerid][pVerifySystem])
-	{
-		SCM(playerid, COLOR_SYNTAX, "You are not verified. Goto Discord #verification channel.");
-        
-        return 1;
-	}
-	if(isnull(params))
-	{
-	    SCM(playerid, COLOR_SYNTAX, "Usage: /switchspeedo [kmh/mph]");
-	}
-	else if(!strcmp(params, "kmh", true))
-	{
-		pData[playerid][pSpeedometer] = 1;
-		SCM(playerid, COLOR_AQUA, "Your speedometer will now display speed as "SVRCLR"Kilometers per hour{CCFFFF}.");
-
-		mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE users SET speedometer = 1 WHERE uid = %i", pData[playerid][pID]);
-		mysql_tquery(connectionID, queryBuffer);
-	}
-	else if(!strcmp(params, "mph", true))
-	{
-		pData[playerid][pSpeedometer] = 2;
-		SCM(playerid, COLOR_AQUA, "Your speedometer will now display speed as "SVRCLR"Miles per hour{CCFFFF}.");
-
-		mysql_format(connectionID, queryBuffer, sizeof(queryBuffer), "UPDATE users SET speedometer = 2 WHERE uid = %i", pData[playerid][pID]);
-		mysql_tquery(connectionID, queryBuffer);
-	}
-
-	return 1;
-}*/
 
 CMD:shakehand(playerid,  params[])
 {	
@@ -91552,12 +90816,6 @@ Graffity_GetColor(playerid)
     if (!GetPVarInt(playerid, "Graffity:Edit")) return -1;
     return GetPVarInt(playerid, "Graffity:Color") - 1;
 }
-
-/*Graffity_GetBackColor(playerid)
-{
-    if (!GetPVarInt(playerid, "Graffity:Edit")) return -1;
-    return GetPVarInt(playerid, "Graffity:Back") - 1;
-}*/
 
 Graffity_GetFont(playerid)
 {
